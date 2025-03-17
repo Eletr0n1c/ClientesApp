@@ -9,10 +9,9 @@ namespace ClientesApp.Domain.Interfaces.Repositories
     {
         void Add(Cliente cliente);
         void Update(Cliente cliente);
-        void Delete(Cliente cliente);
         List<Cliente> GetAll();
         Cliente GetById(Guid id);
-        bool VerifyEmail(string email);
-        bool VerifyCpf(string cpf);
+        bool VerifyEmail(string email, Guid clienteId);
+        bool VerifyCpf(string cpf, Guid clienteId);
     }
 }
